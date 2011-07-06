@@ -3,7 +3,7 @@
 #include <fstream>
 #include <string>
 
-#include "HiggsCSandWidth.cc"
+#include "HiggsCSandWidthSM4.cc"
 
 using namespace std;
 
@@ -13,7 +13,7 @@ int main()
   ofstream fileOut;
   char* fileName_[6] = {"Total_cs_scale.txt","GluGlu_cs_scale.txt","VBF_cs_scale.txt","WH_cs_scale.txt","ZH_cs_scale.txt","ttH_cs_scale.txt"};
 
-  HiggsCSandWidth *myCSW = new HiggsCSandWidth();
+  HiggsCSandWidthSM4 *myCSW = new HiggsCSandWidthSM4();
 
   for( int i = 0; i < 6; i++)
     {
